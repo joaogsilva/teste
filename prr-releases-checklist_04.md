@@ -20,16 +20,6 @@ If a reviewer in the "Mandatory" section is not allocated, please add the reason
 ## Checklist
 This checklist contains points that must be satisfied according to the criticality of the microservice, which can be classified as low, medium, high or critical.
 
-##### Risk Calculate
-
-| Item Weights |
-| ------------ |
-| 0, 1 or 2    |
-
-| Calculation                                                      |
-| ---------------------------------------------------------------- |
-| Risk = \[(a0 \* t) + (a1 \* t) + (ai \* t) + ... + (an \* t)\]/n |
-
 | i  | Item            | Item Description                                                                                                                                                                                                                  | Not satisfied | Partially satisfied | Totally satisfied |
 | -- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------- | ----------------- |
 | 0  | Architecture    | Add architecture diagrams and how they interact with existing ABI services, applications and components.                                                                                                                          |               |                     |
@@ -90,3 +80,14 @@ This checklist contains points that must be satisfied according to the criticali
 |    |                 |     - \[Integration\]                                                                                                                                                                                                             |               |                     |                   |
 |    |                 |     - \[End-to-end\]                                                                                                                                                                                                              |               |                     |                   |
 |    |                 |     - \[Vulnerability\]                                                                                                                                                                                                           |               |                     |                   |
+
+##### Risk Calculate
+The risk is calculated based on the formula below and it is measured to identify risks in production environments.
+
+| Item Weights |
+| ------------ |
+| 0, 1 or 2    |
+
+| Calculation                                                      |
+| ---------------------------------------------------------------- |
+| Risk = \[(a0 \* t) + (a1 \* t) + (ai \* t) + ... + (an \* t)\]/n |
