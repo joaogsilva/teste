@@ -20,7 +20,7 @@ If a reviewer in the "Mandatory" section is not allocated, please add the reason
 ## Checklist
 This checklist contains points that must be satisfied according to the criticality of the microservice, which can be classified as low, medium, high or critical.
 
-| i  | Item            | Item Description                                                                                                                                                                                                                  | Not satisfied | Partially satisfied | Totally satisfied | Not Applicable |
+| i  | Item            | Item Description                                                                                                                                                                                                                  | Not satisfied | Partially satisfied | Totally satisfied | Not applicable |
 | -- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------- | ----------------- | -------------- |
 | 0  | Architecture    | Add architecture and data flow diagrams and how they interact with existing ABI services, applications and components.                                                                                                            |               |                     |
 | 1  | Architecture    | List the external and internal dependencies to the application (e.g.: database, microservice, legacy, etc) and the potential impacts of failure on that dependency.                                                               |
@@ -90,4 +90,10 @@ The risk is calculated based on the formula below and it is measured to identify
 
 | Calculation                                                      |
 | ---------------------------------------------------------------- |
-| Risk = \[(a0 \* t) + (a1 \* t) + (ai \* t) + ... + (an \* t)\]/n |
+| Risk = \[(a0 \* t0) + (a1 \* t1) + (ai \* ti) + ... + (an \* tn)\]/n |
+
+Where:
+i: item index
+ai: item answer based on item weight
+ti: 0 if totally satisfied; 0,5 if partially satisfied; 1 if not satisfied
+n: number of applicable items
