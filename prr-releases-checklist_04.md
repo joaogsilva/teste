@@ -94,6 +94,9 @@ The risk is calculated based on the formula below and it is measured to identify
 
 Where:
 i: item index
+
 ai: item answer based on item weight
+
 ti: 0 if totally satisfied; 0,5 if partially satisfied; 1 if not satisfied
+
 n: number of applicable items
