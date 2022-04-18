@@ -93,6 +93,7 @@ The risk is calculated based on the formula below and it is measured to identify
 | Risk = \[(a0 \* t0) + (a1 \* t1) + (ai \* ti) + ... + (an \* tn)\]/n |
 
 Where:
+
 i: item index
 
 ai: item answer based on item weight
