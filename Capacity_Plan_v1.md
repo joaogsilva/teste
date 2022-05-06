@@ -61,3 +61,19 @@ Some requirements estimated according to the implemented architecture for the se
 ### 2nd moment
 
 In the second moment, the current free capacity of the service (from the adopted methodology), the target free capacity and the expected workload growth until the date for next capacity planning must be determined. From these data, the quantities of each resource to be added to the service are calculated and predicted. The items of this moment are identified by the column "Moment" (2nd moment) in the spreadsheet.
+
+## 1st moment items
+
+|   | 1st moment                                            |        |
+| - | ----------------------------------------------------- | ------ |
+| i | Item                                                  | Answer |
+| A | Service tier size (# of hosts or container instances) |        |
+| B | CPUs per service instance                             |        |
+| C | Memory per service instance                           |        |
+| D | Storage per service instance                          |        |
+| E | Network throughput per service instance               |        |
+| F | TPS per instance                                      |        |
+| G | Maximum acceptable latency                            |        |
+| H | IOPS                                                  |        |
+| I | Number of concurrent clients                          |        |
+
