@@ -64,9 +64,8 @@ In the second moment, the current free capacity of the service (from the adopted
 
 ## 1st moment items
 
-|   | 1st moment                                            |        |
-| - | ----------------------------------------------------- | ------ |
 | i | Item                                                  | Answer |
+| - | ----------------------------------------------------- | ------ |
 | A | Service tier size (# of hosts or container instances) |        |
 | B | CPUs per service instance                             |        |
 | C | Memory per service instance                           |        |
