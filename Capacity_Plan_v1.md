@@ -5,10 +5,15 @@ The SRE transformation movement that ABI is going through aims to optimize the r
 In modern software environments, like those built on scalable microservices architectures, hitting capacity limits is a common cause of production-level incidents. It’s also, arguably, a type of incident teams can often prevent through proactive planning.
 
 ## What is
+Capacity planning is the process of determining the infrastructure resources required by your application to meet future workload demands for your app. This process ensures that you have adequate resources available only when they are needed, reducing costs to the minimum. If you know how your application is used and the limits of your current resources, you can extrapolate the data and know, more or less, the future requirements. Adopting a capacity plan for your application has some benefits, among which we can highlight the following ones:
 
-Capacity planning is work teams do to make sure their services have enough spare capacity to handle any likely increases in workload, and enough buffer capacity to absorb normal workload spikes, between planning iterations. This plan addresses the number of container instances and some resource types per instance, such as CPU, memory, storage, network throughput, TPS, latency, IOPS and concurrent clients.
+- Minimize costs and avoid waste from over-provisioning;
+- Prevent bottlenecks and save time;
+- Increase business productivity;
+- Increase application reliability;
+- Decrease in the number of incapacity-related incidents;
 
-During the capacity-planning process, teams answer these four questions:
+This plan addresses the number of container instances and some resource types per instance, such as CPU, memory, storage, network throughput, TPS, latency, IOPS and concurrent clients. Based on these data, during the capacity-planning process, teams answer these four questions:
 
 1. How much free capacity currently exists in each of our services?
 2. How much capacity buffer do we need for each of our services?
@@ -18,7 +23,6 @@ During the capacity-planning process, teams answer these four questions:
 The answers to those four questions—along with the architectures and uses of the services—help determine the methodology our teams use to calculate their capacity needs.
 
 ### Determining free capacity
-
 There is three common methodologies to calculate how much free capacity exists for a given service:
 
 1. Service-starvation
@@ -52,15 +56,13 @@ Although this can be a quick way to estimate free capacity in a service, there a
 No matter which methodology you choose, experiment during both peak and non-peak workload periods to get an accurate understanding of what the service can handle.
 
 ## How to use the plan
-
-The use of the plan occurs through the Capacity_Planning_vLive spreadsheet, composed of a series of quantitative items whose completion is divided into two moments, which are better detailed below.
+The use of the plan occurs through the Capacity_Planning_vLive spreadsheet, composed of a series of quantitative items whose completion is divided into two moments, the capacity planning and the capacity expansion planning, which are better detailed below.
 
 ### 1st moment
-Some requirements estimated according to the implemented architecture for the service to work properly should be pointed out. The items of this moment are identified by the column "Moment" (1st moment) in the spreadsheet and also at the end of this document.
+At the Capacity Planning moment, some requirements estimated according to the implemented architecture for the service to work properly should be pointed out. The items of this moment are identified by the column "Moment" (Capacity Planning) in the spreadsheet and also at the end of this document.
 
 ### 2nd moment
-
-In the second moment, the current free capacity of the service (from the adopted methodology), the target free capacity and the expected workload growth until the date for next capacity planning must be determined. From these data, the quantities of each resource to be added to the service are calculated and predicted. The items of this moment are identified by the column "Moment" (2nd moment) in the spreadsheet.
+At the Capacity Expansion Planning moment, the current free capacity of the service (from the adopted methodology), the target free capacity and the expected workload growth until the date for next capacity planning must be determined. From these data, the quantities of each resource to be added to the service are calculated and predicted. The items of this moment are identified by the column "Moment" (Capacity Expansion Planning) in the spreadsheet.
 
 ## 1st moment items
 
